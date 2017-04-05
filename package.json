@@ -1,0 +1,32 @@
+{
+  "name": "redux-jawn",
+  "version": "1.0.0",
+  "description": "Redux middleware for APIs that includes request caching and query string management.",
+  "main": "index.js",
+  "dependencies": {
+    "husky": "^0.13.3",
+    "prettier": "^0.22.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthewkturner/redux-jawn.git"
+  },
+  "keywords": [
+    "redux",
+    "middleware",
+    "redux",
+    "api",
+    "middleware",
+    "react"
+  ],
+  "author": "Matthew K. Turner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matthewkturner/redux-jawn/issues"
+  },
+  "homepage": "https://github.com/matthewkturner/redux-jawn#readme"
+}
