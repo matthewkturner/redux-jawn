@@ -13,7 +13,7 @@ const isValidApiAction = type => {
     type === API_INVALIDATE_PATH;
 };
 
-const api = ({ dispatch, getState }) =>
+const jawn = ({ dispatch, getState }) =>
   next =>
     action => {
       const {
@@ -187,9 +187,7 @@ async function request(path = '', config = {}, contentType, name, dispatch) {
 }
 
 export {
-  api,
-  findReport,
-  request,
+  jawn,
   ERROR,
   INVALIDATE,
   INVALIDATE_PATH,
