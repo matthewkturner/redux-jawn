@@ -51,7 +51,7 @@ import {
   INVALIDATE_PATH,
   REQUEST,
   RECEIVE,
-} from '~src/core/api';
+} from 'redux-jawn';
 
 export const initialState = {
   isFetching: {},
