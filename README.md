@@ -19,14 +19,20 @@ import { API_REQUEST, API_INVALIDATE, API_INVALIDATE_PATH } from 'redux-jawn';
 
 // GET
 export const fetchHoagies = () => {
+  const query = {
+    hoagiesPerPage: 20,
+    currentHoagiePageIndex: 0
+  };
+
   dispatch({
     type: API_REQUEST,
     method: 'GET',
-    path: ENDPOINTS.TENANTS,
-    name: 'fetchTenants',
+    path: '/api/hoagies',
+    name: 'fetchHoagies',
     query,
   }).then(
     json => {
+      // Do things
       dispatch(receiveHoagies(json));
     },
     err => console.error(err)
@@ -128,3 +134,9 @@ export default apiReducer;
 
 - `API_REQUEST`
 A dispatched action for making a request. The action requires a `method` and a `path` but can also include a `body`, `query` and `contentType`.
+
+- `API_INVALIDATE`
+Invalidate the entire api state. 
+
+- `API_INVALIDATE_PATH`
+Invalidate the cache of a certain path.
